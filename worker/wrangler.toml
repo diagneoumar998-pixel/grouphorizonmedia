@@ -1,0 +1,10 @@
+name = "ghm-news-cron"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["*/10 * * * *"]   # toutes les 10 minutes
+
+[[kv_namespaces]]
+binding = "NEWS"
+id = "REMPLACER_PAR_L_ID_DU_KV"   # obtenu avec : npx wrangler kv namespace create NEWS

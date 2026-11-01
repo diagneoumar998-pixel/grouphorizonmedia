@@ -1,0 +1,4 @@
+{ "name": "group-horizon-media", "private": true, "type": "module",
+  "scripts": { "test": "node --test", "check": "node scripts/check-sources.mjs",
+    "dev": "wrangler pages dev public --kv=NEWS", "dev:cron": "wrangler dev --config worker/wrangler.toml --test-scheduled" },
+  "devDependencies": { "wrangler": "^4.0.0" } }
